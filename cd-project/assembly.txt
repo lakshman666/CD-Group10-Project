@@ -1,0 +1,25 @@
+	push	0
+	pop	$s
+	push	0
+	pop	$i
+	push	20
+	push	4
+	mul
+	push	15
+	add
+	pop	$b
+L000:
+	push	$i
+	push	100
+	compLT
+	jz	L001
+	push	$s
+	push	$i
+	add
+	pop	$s
+	push	$i
+	push	1
+	add
+	pop	$i
+	jmp	L000
+L001:
